@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda · Instituto Lírios</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6c-3 4-3 8 0 11 3-3 3-7 0-11Z" fill="#C7A489"/>
+        <path d="M24 17c-6 0-11 5-11 11 0 7 5 12 11 15 6-3 11-8 11-15 0-6-5-11-11-11Z" stroke="#8A6248" stroke-width="1.6" fill="none"/>
+        <circle cx="24" cy="26" r="4.5" stroke="#8A6248" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+    <small>Dr.ª</small>
+    <div class="brand-name">KATLHEN</div>
+    <div class="brand-script">Carvalho</div>
+    <div class="brand-tag">CUIDANDO DE QUEM GESTA,<br>DO BEBÊ E DA FAMÍLIA</div>
+  </div>
+
+  <nav class="nav">
+    <a href="dashboard.html" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
+      Início
+    </a>
+    <a href="agenda.html" class="nav-link active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 9.5h17"/></svg>
+      Agenda
+    </a>
+    <a href="clientes.html" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3.3"/><path d="M2.8 20c.7-3.6 3.3-5.8 6.2-5.8s5.5 2.2 6.2 5.8"/><circle cx="17.3" cy="8.3" r="2.4"/><path d="M15.6 14.5c2.2.4 3.9 2.3 4.5 5.3"/></svg>
+      Clientes
+    </a>
+    <a href="ficha-cliente.html" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2.6"/><path d="M9.5 10.5c-2 1-3.2 3-3.2 5.5 0 3.4 2.6 6 6 6s5.6-2.9 5.4-6.2c-2 .3-3.6-.4-4.4-1.8"/></svg>
+      Gestantes
+    </a>
+    <a href="#" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+      Serviços
+    </a>
+    <a href="contratos.html" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h8L19 7.5V20a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4.5h5M8.5 12.5h7M8.5 15.5h7M8.5 9.5h3"/></svg>
+      Contratos
+    </a>
+    <a href="#" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+      Pendências
+    </a>
+    <a href="#" class="nav-link ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 20V10M12 20V4M19.5 20v-7"/></svg>
+      Relatórios
+    </a>
+
+    <div class="nav-divider"></div>
+  </nav>
+
+  <div class="nav-foot">
+    <a href="#" class="nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1.1-1.55 1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.9 15a1.7 1.7 0 0 0-1.55-1H3.3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 5 8.7a1.7 1.7 0 0 0-.34-1.87l-.06-.06A2 2 0 1 1 7.43 4l.06.06A1.7 1.7 0 0 0 9.35 4.4H9.4A1.7 1.7 0 0 0 10.4 3V2.9a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.35 4.4a1.7 1.7 0 0 0 1.88-.34l.06-.06A2 2 0 1 1 20.12 6.83l-.06.06A1.7 1.7 0 0 0 19.72 8.7v.05A1.7 1.7 0 0 0 21.1 10.4H21.2a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+      Configurações
+    </a>
+    <a href="login.html" class="nav-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>
+      Sair
+    </a>
+  </div>
+</aside>
+
+<main class="main">
+<div class="page-head">
+  <div>
+    <h1>Agenda</h1>
+    <p class="subtitle">Organize e acompanhe todos os atendimentos</p>
+  </div>
+  <button class="btn btn-primary" id="btnNovoAgendamento">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 5v14M5 12h14"/>
+  </svg>
+  Novo agendamento
+</button>
+</div>
+
+<div class="card" style="padding:22px;">
+  <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-bottom:20px;">
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button class="btn btn-ghost btn-sm">Hoje</button>
+      <div style="display:flex; align-items:center; gap:6px;">
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <h3 style="font-size:19px;">Agosto 2026</h3>
+    </div>
+    <div style="display:flex; gap:4px; background:var(--cream-100); padding:4px; border-radius:10px;">
+      <button class="btn btn-ghost btn-sm" style="border:none; background:transparent;">Dia</button>
+      <button class="btn btn-ghost btn-sm" style="border:none; background:transparent;">Semana</button>
+      <button class="btn btn-sm" style="border:none; background:var(--white-soft); box-shadow:var(--shadow-1);">Mês</button>
+    </div>
+  </div>
+
+  <div class="calendar">
+    <div class="cal-head">
+      <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+</div>
+<!-- Modal Novo Agendamento -->
+<div class="modal-overlay" id="modalAgendamento">
+  <div class="modal">
+
+    <div class="modal-header">
+      <div>
+        <h2>Novo agendamento</h2>
+        <p>Cadastre um novo atendimento</p>
+      </div>
+
+      <button type="button" class="modal-close" id="fecharModal">
+        ×
+      </button>
+    </div>
+
+    <form id="formAgendamento">
+
+      <div class="form-group">
+        <label for="clienteAgendamento">Cliente</label>
+
+        <select id="clienteAgendamento" required>
+          <option value="">Selecione a cliente</option>
+          <option value="Maria Silva">Maria Silva</option>
+          <option value="Ana Sousa">Ana Sousa</option>
+          <option value="Carla Lima">Carla Lima</option>
+          <option value="Júlia Alves">Júlia Alves</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="dataAgendamento">Data</label>
+          <input type="date" id="dataAgendamento" required>
+        </div>
+
+        <div class="form-group">
+          <label for="horaAgendamento">Horário</label>
+          <input type="time" id="horaAgendamento" required>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="servicoAgendamento">Serviço</label>
+
+        <select id="servicoAgendamento" required>
+          <option value="">Selecione o serviço</option>
+          <option value="Pré-natal">Pré-natal</option>
+          <option value="Consulta">Consulta</option>
+          <option value="Acompanhamento">Acompanhamento</option>
+          <option value="Retorno">Retorno</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="observacaoAgendamento">Observação</label>
+
+        <textarea
+          id="observacaoAgendamento"
+          rows="3"
+          placeholder="Observações do atendimento..."
+        ></textarea>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="cancelarAgendamento">
+          Cancelar
+        </button>
+
+        <button type="submit" class="btn btn-primary">
+          Salvar agendamento
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+<script>
+(function () {
+
+  const grid = document.getElementById('calGrid');
+
+  const tituloMes = document.querySelector('.card h3');
+
+  const botoes = document.querySelectorAll('.card .btn-sm');
+
+  const eventos = {
+  '2026-08-03': [{ t: '09:30', w: 'Maria Silva', c: 'peach' }],
+  '2026-08-12': [{ t: '10:30', w: 'Ana Sousa', c: 'rose' }],
+  '2026-08-25': [{ t: '14:00', w: 'Carla Lima', c: 'clay' }],
+  '2026-08-28': [{ t: '16:00', w: 'Júlia Alves', c: 'peach' }]
+};
+
+  let dataAtual = new Date(2026, 7, 1);
+
+  function renderizarCalendario() {
+
+    const ano = dataAtual.getFullYear();
+    const mes = dataAtual.getMonth();
+
+    const primeiroDia = new Date(ano, mes, 1).getDay();
+    const ultimoDia = new Date(ano, mes + 1, 0).getDate();
+
+    const diasMesAnterior = new Date(ano, mes, 0).getDate();
+
+    const dias = [];
+
+    // Dias do mês anterior
+    for (let i = primeiroDia - 1; i >= 0; i--) {
+      dias.push({
+        n: diasMesAnterior - i,
+        out: true
+      });
+    }
+
+    // Dias do mês atual
+    for (let i = 1; i <= ultimoDia; i++) {
+      dias.push({
+        n: i,
+        out: false
+      });
+    }
+
+    // Completa a última semana
+    let proximo = 1;
+
+    while (dias.length < 42) {
+      dias.push({
+        n: proximo++,
+        out: true
+      });
+    }
+
+    const nomeMes = dataAtual.toLocaleDateString('pt-BR', {
+      month: 'long',
+      year: 'numeric'
+    });
+
+    tituloMes.textContent =
+      nomeMes.charAt(0).toUpperCase() + nomeMes.slice(1);
+
+    grid.innerHTML = dias.map(dia => {
+
+      const chaveData =
+  `${ano}-${String(mes + 1).padStart(2, '0')}-${String(dia.n).padStart(2, '0')}`;
+
+const evs =
+  !dia.out && eventos[chaveData]
+    ? eventos[chaveData]
+    : [];
+
+      return `
+        <div class="cal-cell ${dia.out ? 'out' : ''}">
+          <span class="cal-num">${dia.n}</span>
+
+          ${evs.map(evento => `
+            <div class="cal-event ${evento.c}">
+              <b>${evento.t}</b>
+              ${evento.w}
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+    }).join('');
+  }
+
+
+  // Botão HOJE
+  const botaoHoje = document.querySelector('.card .btn-ghost');
+
+  if (botaoHoje) {
+    botaoHoje.addEventListener('click', () => {
+
+      dataAtual = new Date(2026, 7, 1);
+
+      renderizarCalendario();
+
+    });
+  }
+
+
+  // Botões de voltar e avançar
+  const botoesNavegacao =
+    document.querySelectorAll('.card .icon-btn');
+
+  if (botoesNavegacao.length >= 2) {
+
+    botoesNavegacao[0].addEventListener('click', () => {
+
+      dataAtual.setMonth(dataAtual.getMonth() - 1);
+
+      renderizarCalendario();
+
+    });
+
+    botoesNavegacao[1].addEventListener('click', () => {
+
+      dataAtual.setMonth(dataAtual.getMonth() + 1);
+
+      renderizarCalendario();
+
+    });
+
+  }
+
+
+  // Botões Dia / Semana / Mês
+  const botoesVisualizacao =
+    document.querySelectorAll(
+      '.card > div:first-child .btn-sm'
+    );
+
+  botoesVisualizacao.forEach(botao => {
+
+    botao.addEventListener('click', () => {
+
+      botoesVisualizacao.forEach(b => {
+        b.style.background = 'transparent';
+        b.style.boxShadow = 'none';
+      });
+
+      botao.style.background = 'var(--white-soft)';
+      botao.style.boxShadow = 'var(--shadow-1)';
+
+    });
+
+  });
+
+
+ // ============================================================
+// NOVO AGENDAMENTO
+// ============================================================
+
+const novoAgendamento = document.getElementById('btnNovoAgendamento');
+const modalAgendamento = document.getElementById('modalAgendamento');
+const fecharModal = document.getElementById('fecharModal');
+const cancelarAgendamento = document.getElementById('cancelarAgendamento');
+const formAgendamento = document.getElementById('formAgendamento');
+
+function abrirModal() {
+  modalAgendamento.classList.add('active');
+}
+
+function fecharJanela() {
+  modalAgendamento.classList.remove('active');
+}
+
+if (novoAgendamento) {
+  novoAgendamento.addEventListener('click', abrirModal);
+}
+
+if (fecharModal) {
+  fecharModal.addEventListener('click', fecharJanela);
+}
+
+if (cancelarAgendamento) {
+  cancelarAgendamento.addEventListener('click', fecharJanela);
+}
+
+// Fecha clicando fora da janela
+if (modalAgendamento) {
+  modalAgendamento.addEventListener('click', (event) => {
+    if (event.target === modalAgendamento) {
+      fecharJanela();
+    }
+  });
+}
+
+// ============================================================
+// SALVAR AGENDAMENTO E MOSTRAR NO CALENDÁRIO
+// ============================================================
+
+// Salvar agendamento
+if (formAgendamento) {
+  formAgendamento.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const cliente =
+      document.getElementById('clienteAgendamento').value;
+
+    const data =
+      document.getElementById('dataAgendamento').value;
+
+    const hora =
+      document.getElementById('horaAgendamento').value;
+
+    const servico =
+      document.getElementById('servicoAgendamento').value;
+
+    const observacao =
+      document.getElementById('observacaoAgendamento').value;
+
+    if (!cliente || !data || !hora || !servico) {
+      alert('Preencha todos os campos obrigatórios.');
+      return;
+    }
+
+    // Cria a lista da data, caso ainda não exista
+    if (!eventos[data]) {
+      eventos[data] = [];
+    }
+
+    // Adiciona o novo agendamento
+    eventos[data].push({
+      t: hora,
+      w: cliente,
+      c: 'peach',
+      servico: servico,
+      observacao: observacao
+    });
+
+    // Vai automaticamente para o mês do agendamento
+    const partes = data.split('-');
+    const ano = Number(partes[0]);
+    const mes = Number(partes[1]);
+
+    dataAtual = new Date(ano, mes - 1, 1);
+
+    // Atualiza o calendário
+    renderizarCalendario();
+
+    formAgendamento.reset();
+    fecharJanela();
+
+    alert('Agendamento salvo com sucesso!');
+  });
+}
+// ============================================================
+  // DETALHES DO AGENDAMENTO
+  // ============================================================
+
+  const modalDetalhes =
+    document.getElementById('modalDetalhes');
+
+  const fecharDetalhes =
+    document.getElementById('fecharDetalhes');
+
+  const fecharDetalhesBotao =
+    document.getElementById('fecharDetalhesBotao');
+
+  const detalheCliente =
+    document.getElementById('detalheCliente');
+
+  const detalheData =
+    document.getElementById('detalheData');
+
+  const detalheHora =
+    document.getElementById('detalheHora');
+
+  const detalheServico =
+    document.getElementById('detalheServico');
+
+  const detalheObservacao =
+    document.getElementById('detalheObservacao');
+
+
+  function abrirDetalhes(elemento) {
+
+    const data = elemento.dataset.data;
+    const indice = Number(elemento.dataset.indice);
+
+    const agendamento = eventos[data][indice];
+
+    if (!agendamento) return;
+
+    const partes = data.split('-');
+
+    const dataFormatada =
+      `${partes[2]}/${partes[1]}/${partes[0]}`;
+
+    detalheCliente.textContent =
+      agendamento.w;
+
+    detalheData.textContent =
+      dataFormatada;
+
+    detalheHora.textContent =
+      agendamento.t;
+
+    detalheServico.textContent =
+      agendamento.servico || 'Não informado';
+
+    detalheObservacao.textContent =
+      agendamento.observacao || 'Nenhuma observação.';
+
+    modalDetalhes.classList.add('active');
+  }
+
+
+  // Clicar em um agendamento
+  document.addEventListener('click', (event) => {
+
+    const agendamento =
+      event.target.closest('.cal-event');
+
+    if (agendamento) {
+      abrirDetalhes(agendamento);
+    }
+
+  });
+
+
+  // Fechar detalhes
+  function fecharDetalhesJanela() {
+    modalDetalhes.classList.remove('active');
+  }
+
+
+  if (fecharDetalhes) {
+    fecharDetalhes.addEventListener(
+      'click',
+      fecharDetalhesJanela
+    );
+  }
+
+
+  if (fecharDetalhesBotao) {
+    fecharDetalhesBotao.addEventListener(
+      'click',
+      fecharDetalhesJanela
+    );
+  }
+
+
+  // Fechar clicando fora
+  if (modalDetalhes) {
+    modalDetalhes.addEventListener('click', (event) => {
+
+      if (event.target === modalDetalhes) {
+        fecharDetalhesJanela();
+      }
+
+    });
+  }
+
+
+  // Renderiza o calendário pela primeira vez
+  renderizarCalendario();
+
+})();
+</script>
+
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
+git remote add origin https://github.com/KelrySilva/Instituto-Lirios-.git
